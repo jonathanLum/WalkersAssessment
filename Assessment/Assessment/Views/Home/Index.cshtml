@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <form action="" method="post">
+        <label for="number">Enter an integer between 1-200, then enter "next 20" to display more:</label>
+        <input type="text" id="text" name="text" maxlength="8">
+        <input type="text" id="num" name="number" value=@(ViewBag.Num ?? "-1") hidden>
+        <input type="text" id="vis" name="vis" value=@(ViewBag.Visible ?? "20") hidden>
+        <input type="submit" />
+    </form>
+    <p>Raw Input: @ViewBag.RawText</p>
+    <ol start=@(ViewBag.Visible - 19)>@{
+            if(ViewBag.Data is not null){
+                @for (var i = ViewBag.Visible-20; i < Math.Min(ViewBag.Visible, Enumerable.Count(ViewBag.Data)); i++)
+                {
+                    <li>
+                    @foreach (var word in ViewBag.Data[i]){
+                            string text = word.ToString();
+                            if (text.Contains("walkers"))
+                            {
+                                <b style="color:green;">@text</b>
+                            }
+                            else if (text.Contains("assessment"))
+                            {
+                                <b style="color:red;">@text</b>
+                            }
+                            else{
+                                <b>@text</b>
+                            }
+                }</li>
+                }
+            }
+        }
+    </ol>
+</div>

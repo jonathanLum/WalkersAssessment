@@ -1,0 +1,7 @@
+D:\jonathan\Documents\walkers\Assessment\Assessment\obj\Release\net6.0\PubTmp\Out\Assessment.exe
+D:\jonathan\Documents\walkers\Assessment\Assessment\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+D:\jonathan\Documents\walkers\Assessment\Assessment\obj\Release\net6.0\PubTmp\Out\appsettings.json
+D:\jonathan\Documents\walkers\Assessment\Assessment\obj\Release\net6.0\PubTmp\Out\Assessment.dll
+D:\jonathan\Documents\walkers\Assessment\Assessment\obj\Release\net6.0\PubTmp\Out\Assessment.deps.json
+D:\jonathan\Documents\walkers\Assessment\Assessment\obj\Release\net6.0\PubTmp\Out\Assessment.runtimeconfig.json
+D:\jonathan\Documents\walkers\Assessment\Assessment\obj\Release\net6.0\PubTmp\Out\Assessment.pdb
